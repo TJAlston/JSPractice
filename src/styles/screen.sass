@@ -1,0 +1,41 @@
+@import 'utility'
+
+$base-text-size: 16px
+$base-font-family: sans-serif
+
+html
+  text-size-adjust: 100%
+
+body
+  @include font-smoothing(on)
+  margin: 0
+  font: $base-text-size / 1 $base-font-family
+  padding: 20px
+  display: flex
+  justify-content: center
+  text-align: center
+
+#circle
+  height: 200px
+  width: 200px
+  border-radius: 100px
+  background-color: red
+
+.noCircle
+  background-color: red
+  color: white
+  font-weight: bold
+
+#myInput
+  background-color: rgb(183, 167, 191)
+
+#textArray
+  background-color: blue
+  color: white
+  font-weight: bold
+
+#textChanger
+  background-color: purple
+  color: white
+  font-weight: bold
+  text-transform: uppercase
